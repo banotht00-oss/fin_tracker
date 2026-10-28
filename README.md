@@ -37,14 +37,26 @@ https://fin-tracker-hazel.vercel.app/
 
 ## 🤖 FinBot — AI Financial Assistant
 
-- Built using **Google Gemini API (gemini-2.5-flash)**  
-- Uses **RAG (Retrieval-Augmented Generation)**  
-- Injects real-time SQL insights into prompts  
+FinBot acts as an intelligent financial assistant that analyzes the user's spending behavior and provides personalized financial guidance.
+
+- Built using **Google Gemini API (gemini-2.5-flash)**
+- Uses **RAG (Retrieval-Augmented Generation)** to provide responses based on the user's actual financial data
+- Retrieves relevant **real-time SQL insights** such as spending patterns, transaction history, and category-wise expenses
+- Injects the retrieved financial context into the LLM prompt before generating a response
+- Provides **context-aware and personalized** financial recommendations instead of generic financial advice
 
 Provides:
-- Spending insights  
-- Budget suggestions  
-- Smart recommendations  
+- Spending insights
+- Budget suggestions
+- Smart recommendations
+- Identification of spending patterns
+- Personalized financial guidance
+
+### 🔄 How FinBot Works
+
+**User Query → PostgreSQL Data Retrieval → Relevant Financial Context → Gemini LLM → Personalized Response**
+
+For example, when a user asks *"Why did I spend more this month?"*, FinBot can retrieve the user's recent transaction and category data, analyze the spending pattern, and use Gemini to generate an understandable explanation and recommendation. 
 
 ---
 
